@@ -24,5 +24,5 @@ if __name__ == "__main__":
 
 # __all__ = ['a']   用import * 导入时只能使用a方法
 
-import python_base.error as error
+import pythonBase.error as error
 error.main()
