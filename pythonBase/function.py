@@ -108,7 +108,9 @@ def f(x):
 
 
 result = map(f, my_list)
-print(type(result), result, list(result))  # <class 'map'> <map object at 0x00000287F8323040> [1, 4, 9, 16, 25]
+# <class 'map'> <map object at 0x00000287F8323040> [1, 4, 9, 16, 25]
+print(type(result), result, list(result))
+
 
 # reduce函数
 import functools
@@ -133,3 +135,16 @@ def f(x):
 
 result = filter(f, my_list)
 print(list(result))
+
+# 正则表达式
+import re
+s = "abcdefghijklmnb"
+# match() 开头匹配
+result = re.match("b", s)
+print(result)
+# search() 搜索匹配
+result = re.search("b", s)
+print(result)
+# findall() 搜索全部匹配
+result = re.findall("b",s)
+print(result)
