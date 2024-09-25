@@ -19,6 +19,7 @@ print(data)
 # 发送回复消息
 msg = input("请输入返回给客户端的信息")
 conn.send(msg.encode('utf-8'))
+# conn.send(b"HTTP/1.1 200 OK\r\nserver:wsh\r\ncontent-type:text/html\r\n\r\n<h1>hello world</h1>")
 # 关闭连接
 conn.close()
 socket_server.close()
