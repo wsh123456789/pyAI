@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#
+
+{{ 'abc'| captialize  }}  # Abc
+
+{{ 'abc'| upper  }} # ABC
+
+{{ 'hello world'| title  }} # Hello World
+
+{{ "hello world"| replace('world','yuan') | upper }} # HELLO YUAN
+
+{{ 18.18 | round | int }} # 18
+
+#}
+<h1>{{ username }}</h1>
+<h1>{{ password }}</h1>
+
+<p>{{ books.0 }}</p>
+<p>{{ books.1 }}</p>
+<p>{{ books.2 }}</p>
+<p>{{ books.3 }}</p>
+
+<p>{{ booksDict.金瓶梅.price }}</p>
+
+{% if age > 18 %}
+
+    <p>成年区</p>
+
+{% else %}
+
+    <p>未成年区</p>
+
+{% endif %}
+
+{% for book in books %}
+    <p>{{ book }}</p>
+{% endfor %}
+
+
+</body>
+</html>
