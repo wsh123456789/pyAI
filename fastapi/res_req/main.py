@@ -9,7 +9,7 @@ from apps.form_demo import app04
 from apps.file_demo import app05
 from apps.request_demo import app06
 from apps.response_demo import app07
-from apps.model_demo import app08
+# from apps.model_demo import app08
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="statics"), name="statics")
@@ -21,7 +21,7 @@ app.include_router(app04, prefix="/app04", tags=["app04 form表单"])
 app.include_router(app05, prefix="/app05", tags=["app05 文件上传"])
 app.include_router(app06, prefix="/app06", tags=["app06 request请求对象"])
 app.include_router(app07, prefix="/app07", tags=["app07 response相应对象"])
-app.include_router(app08, prefix="/app08", tags=["app08 模版"])
+# app.include_router(app08, prefix="/app08", tags=["app08 模版"])
 
 if __name__ == '__main__':
     uvicorn.run("main:app", host='127.0.0.1', port=8080, reload=True)
