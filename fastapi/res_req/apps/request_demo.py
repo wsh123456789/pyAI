@@ -14,8 +14,8 @@ app06 = APIRouter()
 @app06.post('/getRequest')
 async def get_request(request: Request):
     return {
-        'url': request.url,
-        'host': request.client.host,
-        'user-agent': request.headers.get('User-Agent'),
+        'url': request.url,  # 请求URL
+        'host': request.client.host,  # 请求IP
+        'user-agent': request.headers.get('User-Agent'),  # 请求宿主
         'cookie': request.cookies
     }
