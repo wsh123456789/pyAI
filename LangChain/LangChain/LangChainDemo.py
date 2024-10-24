@@ -12,7 +12,7 @@ from langchain_openai import ChatOpenAI
 # os.environ['LANGCHAIN_API_KEY'] = "123"
 
 
-# 调用大语言模型
+# LangChain调用百炼
 def get_response():
     llm = ChatOpenAI(
         api_key=os.getenv("DASHSCOPE_API_KEY"),  # 如果您没有配置环境变量，请在此处用您的API Key进行替换
