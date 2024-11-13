@@ -14,7 +14,7 @@ from langserve import add_routes
 #
 #
 # os.environ['LANGCHAIN_TRACING_V2'] = "true"
-# os.environ['LANGCHAIN_API_KEY'] = "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"
+# os.environ['LANGCHAIN_API_KEY'] = "Key"
 
 
 # LangChain调用百炼

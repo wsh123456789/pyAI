@@ -17,7 +17,7 @@ from torch.distributed.elastic.utils import store
 #
 # os.environ['LANGCHAIN_TRACING_V2'] = "true"
 os.environ['LANGCHAIN_PROJECT'] = "LangChainDemo"
-# os.environ['LANGCHAIN_API_KEY'] = "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"
+# os.environ['LANGCHAIN_API_KEY'] = "key"
 
 
 # LangChain调用百炼
